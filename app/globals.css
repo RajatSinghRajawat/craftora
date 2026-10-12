@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #1C1917;
+}
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: var(--font-display-serif), ui-serif, Georgia, serif;
+  --color-warm-ivory: #FAFAF9;
+  --color-wood-walnut: #4A2E1E;
+  --color-wood-teak: #7C4B27;
+  --color-accent-gold: #A0741A;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Plain, thin native scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #D6D3D1 transparent;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss01';
+  line-height: 1.6;
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D3D1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
+
+/* Card Hover Micro-Elevation */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(28, 25, 23, 0.12);
+}
+
+/* Image loading placeholder */
+.card-shimmer {
+  background: linear-gradient(110deg, #F4F0EA 30%, #FBF9F6 50%, #F4F0EA 70%);
+  background-size: 200% 100%;
+  animation: card-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes card-shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-shimmer {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
