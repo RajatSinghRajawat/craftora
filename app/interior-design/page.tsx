@@ -21,7 +21,7 @@ export default function InteriorDesignPage() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/hero-living.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
+          <Image src="/images/interior/living-modern-jaali.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1C1917]/85 via-[#1C1917]/60 to-[#1C1917]/20" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
