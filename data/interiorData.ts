@@ -232,3 +232,158 @@ export const INTERIOR_PROCESS = [
   { step: '04', title: 'Production', text: 'Furniture and modules are crafted in our atelier with quality checks.' },
   { step: '05', title: 'Install & Handover', text: 'Clean installation, final styling and a warranty-backed handover.' },
 ];
+
+export interface InteriorStyleDetails {
+  overview: string;
+  materials: string[];
+  furniture: string[];
+  lighting: string[];
+  decor: string[];
+  bestRooms: InteriorRoom[];
+  tips: string[];
+}
+
+export const INTERIOR_STYLE_DETAILS: Record<InteriorStyle, InteriorStyleDetails> = {
+  Modern: {
+    overview:
+      'Modern interiors balance clean geometry with warmth. Expect flush, handleless storage, a neutral backdrop and a few rich materials — teak, brass, stone — doing the talking. It suits busy Indian families because everything has a place and surfaces are easy to keep clean.',
+    materials: ['Teak & oak veneers', 'Quartz & matte stone', 'Brushed brass trims', 'Acrylic & PU lacquer shutters'],
+    furniture: ['Low plinth sofas', 'Floating TV consoles', 'Handleless wardrobes', 'Slim-profile dining sets'],
+    lighting: ['Cove & profile LED', 'Linear pendants', 'Warm 3000K downlights'],
+    decor: ['Large-format art', 'Sculptural vases', 'Textured rugs'],
+    bestRooms: ['Living Room', 'Modular Kitchen', 'Wardrobe', 'TV Unit'],
+    tips: [
+      'Keep most finishes neutral and use wood for warmth.',
+      'Hide wiring inside panels for a clutter-free TV wall.',
+      'Use one metal finish throughout for consistency.',
+    ],
+  },
+  Minimalist: {
+    overview:
+      'Minimalism is about owning less and showing even less. Full-height concealed storage, soft daylight and a tight colour palette make small apartments feel bigger and calmer.',
+    materials: ['White & greige laminates', 'Light oak', 'Microcement', 'Linen & cotton'],
+    furniture: ['Platform beds', 'Wall-to-wall built-ins', 'Floating desks', 'Simple dining benches'],
+    lighting: ['Recessed downlights', 'Hidden strip lighting', 'Single statement pendant'],
+    decor: ['One artwork per wall', 'A few plants', 'Plain textiles'],
+    bestRooms: ['Bedroom', 'Home Office', 'Wardrobe'],
+    tips: [
+      'Plan storage first — clutter breaks minimalism.',
+      'Match shutter colour to wall colour to make cabinets disappear.',
+      'Choose quality over quantity for every piece.',
+    ],
+  },
+  Scandinavian: {
+    overview:
+      'Scandinavian design is bright, functional and cosy. Pale woods, white walls, soft textiles and plants create a relaxed home that maximises daylight — great for compact city flats.',
+    materials: ['White oak & ash', 'Wool & linen', 'Matte white surfaces', 'Light terrazzo'],
+    furniture: ['Tapered-leg sofas', 'Round dining tables', 'Open shelving', 'Cube storage'],
+    lighting: ['Paper & fabric pendants', 'Floor lamps', 'Warm table lamps'],
+    decor: ['Indoor plants', 'Chunky knit throws', 'Monochrome prints'],
+    bestRooms: ['Living Room', 'Kids Room', 'Modular Kitchen', 'Bedroom'],
+    tips: ['Use sheer curtains to let in maximum light.', 'Layer textures, not colours.', 'Add greenery in every room.'],
+  },
+  Japandi: {
+    overview:
+      'Japandi blends Japanese wabi-sabi with Scandinavian comfort. Low-slung furniture, slatted timber, natural plaster and muted earthy tones create a serene, grounded home.',
+    materials: ['Slatted wood panels', 'Lime plaster', 'Rattan & cane', 'Stoneware'],
+    furniture: ['Low platform beds', 'Curved bouclé sofas', 'Floor cushions', 'Solid wood side tables'],
+    lighting: ['Rice-paper lanterns', 'Dimmable floor lamps', 'Indirect wall washers'],
+    decor: ['Ikebana & dried stems', 'Handmade ceramics', 'Linen drapes'],
+    bestRooms: ['Bedroom', 'Living Room', 'TV Unit'],
+    tips: [
+      'Keep furniture low to the ground.',
+      'Choose imperfect, handmade textures.',
+      'Stick to beige, clay, charcoal and wood tones.',
+    ],
+  },
+  'Indian Traditional': {
+    overview:
+      'Indian traditional interiors celebrate craft — carved sheesham and teak, jaali screens, brass, and jewel-toned handloom fabrics. It feels rooted and festive, and pairs beautifully with modern layouts.',
+    materials: ['Sheesham & Burma teak', 'Brass & copper inlay', 'Kota & marble stone', 'Handloom silk & cotton'],
+    furniture: ['Carved armchairs & diwans', 'Jharokha mirrors', 'Wooden mandirs', 'Brass-studded trunks'],
+    lighting: ['Brass lanterns', 'Diyas & uruli', 'Crystal chandeliers'],
+    decor: ['Pichwai & Madhubani art', 'Dhurries & kilims', 'Marigold & torans'],
+    bestRooms: ['Living Room', 'Pooja Room', 'Dining'],
+    tips: [
+      'Balance heavy carving with plain walls.',
+      'Use a jaali partition to separate zones without walls.',
+      'Mix one or two antiques with new pieces.',
+    ],
+  },
+  Industrial: {
+    overview:
+      'Industrial design borrows from warehouses and lofts — exposed brick, black metal, concrete and dark wood. Bold and low-maintenance, it works well for studies, cafés and young homes.',
+    materials: ['Exposed brick & concrete', 'Black powder-coated steel', 'Walnut & reclaimed wood', 'Leather'],
+    furniture: ['Metal-frame shelves', 'Live-edge desks', 'Leather sofas', 'Bar stools'],
+    lighting: ['Edison bulbs', 'Track lights', 'Cage pendants'],
+    decor: ['Vintage posters', 'Metal clocks', 'Large mirrors'],
+    bestRooms: ['Home Office', 'Wardrobe', 'Commercial'],
+    tips: [
+      'Use warm wood to soften cold metal.',
+      'Brick-look cladding works where real brick is not possible.',
+      'Keep layouts open.',
+    ],
+  },
+  Bohemian: {
+    overview:
+      'Bohemian homes are relaxed, layered and personal. Rattan, cane, plants, kilim rugs and collected treasures come together in a free-spirited mix of colour and pattern.',
+    materials: ['Rattan & cane', 'Jute & macramé', 'Terracotta', 'Block-printed cotton'],
+    furniture: ['Peacock chairs', 'Floor poufs', 'Low daybeds', 'Vintage cabinets'],
+    lighting: ['Woven pendants', 'Fairy lights', 'Lanterns'],
+    decor: ['Lots of plants', 'Gallery walls', 'Layered rugs & cushions'],
+    bestRooms: ['Living Room', 'Kids Room', 'Commercial'],
+    tips: [
+      'Start with a neutral base, then layer colour.',
+      'Mix patterns in the same colour family.',
+      'Display things you love, not things that match.',
+    ],
+  },
+  'Luxury Contemporary': {
+    overview:
+      'Luxury contemporary interiors feel like a five-star hotel at home — fluted panels, marble, velvet, smoked glass and layered lighting, all finished with precision.',
+    materials: ['Italian marble', 'Fluted veneer panels', 'Smoked & bronze glass', 'Velvet & bouclé'],
+    furniture: ['Statement sofas', 'Walk-in wardrobes', 'Marble dining tables', 'Bar units'],
+    lighting: ['Chandeliers', 'Profile LED in shelves', 'Layered scene lighting'],
+    decor: ['Sculptures', 'Metallic accents', 'Large mirrors'],
+    bestRooms: ['Living Room', 'Wardrobe', 'TV Unit', 'Modular Kitchen', 'Commercial'],
+    tips: [
+      'Invest in lighting — it makes luxury materials glow.',
+      'Use one hero material per room.',
+      'Keep hardware concealed or premium.',
+    ],
+  },
+  Rustic: {
+    overview:
+      'Rustic interiors are earthy and handcrafted — live-edge slabs, reclaimed timber, terracotta and stone. Perfect for farmhouses, villas and anyone who loves natural imperfection.',
+    materials: ['Reclaimed & live-edge wood', 'Terracotta tiles', 'Natural stone', 'Wrought iron'],
+    furniture: ['Farmhouse tables & benches', 'Solid wood beds', 'Open dressers', 'Wooden beams'],
+    lighting: ['Iron chandeliers', 'Lanterns', 'Warm 2700K bulbs'],
+    decor: ['Woven baskets', 'Ceramics', 'Dried flowers'],
+    bestRooms: ['Dining', 'Living Room', 'Modular Kitchen'],
+    tips: [
+      'Let wood grain and knots show.',
+      'Choose matte, oiled finishes over gloss.',
+      'Pair rustic pieces with crisp white walls.',
+    ],
+  },
+  'Mid-Century': {
+    overview:
+      'Mid-century modern brings the optimism of the 1950s and 60s — tapered legs, curved forms, walnut veneers and pops of mustard and teal. Timeless and full of character.',
+    materials: ['Walnut & teak veneer', 'Moulded plywood', 'Velvet & tweed', 'Brass'],
+    furniture: ['Lounge chairs', 'Sideboards', 'Tapered-leg sofas', 'Round coffee tables'],
+    lighting: ['Globe pendants', 'Arc floor lamps', 'Sputnik chandeliers'],
+    decor: ['Geometric rugs', 'Abstract art', 'Vinyl & books'],
+    bestRooms: ['Living Room', 'TV Unit', 'Home Office'],
+    tips: [
+      'A teak sideboard instantly sets the style.',
+      'Use bold colour on one or two pieces only.',
+      'Raise furniture on legs to keep rooms airy.',
+    ],
+  },
+};
+
+export const styleSlug = (style: InteriorStyle) => style.toLowerCase().replace(/\s+/g, '-');
+
+export const getStyleBySlug = (slug: string) => INTERIOR_STYLES.find((s) => styleSlug(s.name) === slug);
+
+export const getDesignById = (id: string) => INTERIOR_DESIGNS.find((d) => d.id === id);

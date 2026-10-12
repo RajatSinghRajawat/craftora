@@ -1,12 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Metadata } from 'next';
 import { ArrowRight, Check, Phone } from 'lucide-react';
 import Badge from '@/components/common/Badge';
 import Button from '@/components/common/Button';
 import SectionHeader from '@/components/common/SectionHeader';
 import InteriorGallery from '@/components/interior/InteriorGallery';
-import { INTERIOR_STYLES, INTERIOR_PACKAGES, INTERIOR_PROCESS } from '@/data/interiorData';
+import { INTERIOR_STYLES, INTERIOR_PACKAGES, INTERIOR_PROCESS, styleSlug } from '@/data/interiorData';
 import { Reveal, Stagger, StaggerItem, TextReveal, Magnetic } from '@/components/motion';
 
 export const metadata: Metadata = {
@@ -75,7 +76,10 @@ export default function InteriorDesignPage() {
           <Stagger stagger={0.06} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {INTERIOR_STYLES.map((s) => (
               <StaggerItem key={s.name}>
-                <div className="group h-full rounded-2xl overflow-hidden bg-white border border-[#E7E5E4] card-hover">
+                <Link
+                  href={`/interior-design/styles/${styleSlug(s.name)}`}
+                  className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white border border-[#E7E5E4] card-hover"
+                >
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
                       src={s.image}
@@ -90,7 +94,7 @@ export default function InteriorDesignPage() {
                       <p className="text-[11px] text-[#E7E5E4]">{s.tagline}</p>
                     </div>
                   </div>
-                  <div className="p-3">
+                  <div className="p-3 flex-1 flex flex-col">
                     <div className="flex gap-1 mb-2">
                       {s.palette.map((c) => (
                         <span
@@ -100,9 +104,13 @@ export default function InteriorDesignPage() {
                         />
                       ))}
                     </div>
-                    <p className="text-xs text-[#57534E] leading-relaxed">{s.description}</p>
+                    <p className="text-xs text-[#57534E] leading-relaxed flex-1">{s.description}</p>
+                    <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[#4A2E1E]">
+                      Explore style
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                    </span>
                   </div>
-                </div>
+                </Link>
               </StaggerItem>
             ))}
           </Stagger>

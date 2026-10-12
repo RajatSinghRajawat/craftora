@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import SectionHeader from '../common/SectionHeader';
-import { INTERIOR_STYLES } from '@/data/interiorData';
+import { INTERIOR_STYLES, styleSlug } from '@/data/interiorData';
 import { Stagger, StaggerItem } from '../motion';
 
 /** Home page teaser linking into the full Interior Design section. */
@@ -22,7 +22,7 @@ export default function InteriorDesignPreview() {
           {INTERIOR_STYLES.map((s, i) => (
             <StaggerItem key={s.name} className={i >= 8 ? 'hidden lg:block' : ''}>
               <Link
-                href="/interior-design#gallery"
+                href={`/interior-design/styles/${styleSlug(s.name)}`}
                 className="group block relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#F5F5F4]"
               >
                 <Image
