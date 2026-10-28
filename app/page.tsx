@@ -8,6 +8,7 @@ import PepperfryTrendingGrid from '@/components/home/PepperfryTrendingGrid';
 import InteriorDesignPreview from '@/components/home/InteriorDesignPreview';
 import MaterialStudio from '@/components/home/MaterialStudio';
 import PepperfryCustomerLookbook from '@/components/home/PepperfryCustomerLookbook';
+import CraftoraAboutStory from '@/components/home/CraftoraAboutStory';
 import ConsultationCTA from '@/components/home/ConsultationCTA';
 
 export default function HomePage() {
@@ -40,7 +41,10 @@ export default function HomePage() {
       {/* 8. Pepperfry Real Customer Homes & Lookbook Showcase */}
       <PepperfryCustomerLookbook />
 
-      {/* 9. Free In-Home 3D Measurement & Spatial Consultation CTA */}
+      {/* 9. Craftora 35-Year Heritage & Jaipur Atelier Story Section */}
+      <CraftoraAboutStory />
+
+      {/* 10. Free In-Home 3D Measurement & Spatial Consultation CTA */}
       <ConsultationCTA />
     </div>
   );

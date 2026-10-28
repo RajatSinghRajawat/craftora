@@ -491,33 +491,55 @@ export default function Navbar() {
                     className="absolute right-0 top-full mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-[#E8E2D8] p-4 z-50 text-left"
                   >
                     <div className="pb-3 border-b border-[#F0ECE4]">
-                      <p className="text-xs font-bold uppercase text-[#8E857C] tracking-wider">Welcome to Craftora</p>
-                      <p className="text-sm font-bold text-[#1F1B18] mt-0.5">Explore Bespoke Luxury</p>
+                      <div className="flex items-center justify-between">
+                        <p className="text-xs font-bold uppercase text-[#8E857C] tracking-wider">Account Portal</p>
+                        <span className="text-[10px] bg-[#FAF5EE] text-[#7C4B27] px-2 py-0.5 rounded-full font-bold">Jaipur Patron</span>
+                      </div>
+                      <Link
+                        href="/account"
+                        onClick={() => setIsAccountOpen(false)}
+                        className="text-sm font-bold text-[#1F1B18] mt-1 hover:text-[#7C4B27] flex items-center justify-between group"
+                      >
+                        <span>Rajat Singh</span>
+                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                      </Link>
                     </div>
                     <div className="py-2 space-y-1">
                       <Link
+                        href="/account?tab=orders"
+                        onClick={() => setIsAccountOpen(false)}
+                        className="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
+                      >
+                        <span>My Orders & Live Tracker</span>
+                        <span className="w-2 h-2 rounded-full bg-[#C29B38]" />
+                      </Link>
+                      <Link
+                        href="/account?tab=custom"
+                        onClick={() => setIsAccountOpen(false)}
+                        className="block px-3 py-2 rounded-lg text-xs font-medium text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
+                      >
+                        Custom 3D Commissions
+                      </Link>
+                      <Link
+                        href="/account?tab=warranty"
+                        onClick={() => setIsAccountOpen(false)}
+                        className="block px-3 py-2 rounded-lg text-xs font-medium text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
+                      >
+                        15-Year Warranty Vault
+                      </Link>
+                      <Link
+                        href="/account?tab=addresses"
+                        onClick={() => setIsAccountOpen(false)}
+                        className="block px-3 py-2 rounded-lg text-xs font-medium text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
+                      >
+                        Saved Delivery Addresses
+                      </Link>
+                      <Link
                         href="/contact"
+                        onClick={() => setIsAccountOpen(false)}
                         className="block px-3 py-2 rounded-lg text-xs font-medium text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
                       >
-                        Book Studio Consultation
-                      </Link>
-                      <Link
-                        href="/custom-studio"
-                        className="block px-3 py-2 rounded-lg text-xs font-medium text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
-                      >
-                        My 3D Saved Designs
-                      </Link>
-                      <Link
-                        href="/projects"
-                        className="block px-3 py-2 rounded-lg text-xs font-medium text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
-                      >
-                        Commercial Project Enquiries
-                      </Link>
-                      <Link
-                        href="/about"
-                        className="block px-3 py-2 rounded-lg text-xs font-medium text-[#1F1B18] hover:bg-[#FAF8F5] transition-colors"
-                      >
-                        Artisan Workshop Tour
+                        Book Jaipur Atelier Consultation
                       </Link>
                     </div>
                     <div className="pt-2 border-t border-[#F0ECE4]">
@@ -720,7 +742,19 @@ export default function Navbar() {
 
               <div className="pt-4 border-t border-[#F0ECE4] space-y-2">
                 <Link
+                  href="/account"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center justify-between p-3 rounded-xl bg-[#FAF8F5] border border-[#E8E2D8] text-[#1F1B18] font-bold text-sm"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <User className="w-4 h-4 text-[#7C4B27]" />
+                    <span>My Account & Orders Tracker</span>
+                  </div>
+                  <span className="text-xs bg-[#C29B38] text-white px-2 py-0.5 rounded-full font-semibold">1 Active</span>
+                </Link>
+                <Link
                   href="/custom-studio"
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="flex items-center gap-2.5 p-3 rounded-xl bg-[#FAF5EE] text-[#4A2E1E] font-bold text-sm"
                 >
                   <Sparkles className="w-4 h-4 text-[#C29B38]" />
@@ -728,6 +762,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   href="/contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="flex items-center gap-2.5 p-3 rounded-xl hover:bg-[#FAF8F5] text-[#1F1B18] font-medium text-sm"
                 >
                   <Store className="w-4 h-4 text-[#7C4B27]" />
