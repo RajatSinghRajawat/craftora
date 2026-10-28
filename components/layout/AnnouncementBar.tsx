@@ -7,17 +7,18 @@ import { Phone, MapPin, Store, Sparkles, ChevronDown, Clock, ShieldCheck } from 
 import PincodeModal from '../common/PincodeModal';
 
 const PROMO_MESSAGES = [
-  '⚡ Pepperfry-Style Mega Wood Fest: Up to 45% OFF + Extra 10% with code CRAFT10',
+  '🏛️ Craftora Atelier Jaipur: 35+ Years of Heritage & 2,000+ Happy Customers',
   '🪵 100% Seasoned Kiln-Dried Solid Teak & Walnut with 15-Year Warranty',
-  '🚚 Free White Glove In-Home Delivery & Carpenter Assembly on all Orders',
-  '📐 Free In-Home Measurement & 3D Custom Studio Consultation'
+  '📍 Flagship Studio: Chomu Tatiyawas Toll Plaza, Jaipur 303701',
+  '📞 Direct Call to Owner Surender Singh Rajora: +91 9950757127',
+  '🚚 Direct Jaipur Workshop to Doorstep Delivery & Carpenter Assembly'
 ];
 
 export default function AnnouncementBar() {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [isPincodeModalOpen, setIsPincodeModalOpen] = useState(false);
-  const [pincode, setPincode] = useState('400001');
-  const [city, setCity] = useState('Mumbai');
+  const [pincode, setPincode] = useState('303701');
+  const [city, setCity] = useState('Jaipur');
 
   useEffect(() => {
     try {
@@ -44,10 +45,10 @@ export default function AnnouncementBar() {
 
   return (
     <>
-      <div className="bg-[#1F1B18] text-[#E8E2D8] text-[12px] sm:text-[13px] border-b border-[#352F2B] py-1.5 px-3 sm:px-6 relative z-50">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-1.5 sm:gap-4">
+      <div className="bg-[#1F1B18] text-[#E8E2D8] text-[12px] sm:text-[13px] border-b border-[#352F2B] py-1.5 px-4 sm:px-8 lg:px-12 relative z-50">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-1.5 sm:gap-4">
           
-          {/* Left: Pepperfry-style Utility Links */}
+          {/* Left: Jaipur Flagship & Custom Studio Links */}
           <div className="hidden lg:flex items-center gap-4 text-[#B8AEA3] text-xs">
             <Link
               href="/custom-studio"
@@ -58,18 +59,18 @@ export default function AnnouncementBar() {
             </Link>
             <span className="text-[#3E3832]">|</span>
             <Link
-              href="/about"
-              className="hover:text-white transition-colors flex items-center gap-1"
+              href="/contact"
+              className="hover:text-white transition-colors flex items-center gap-1 font-medium text-[#E8DCCB]"
             >
-              <Store className="w-3.5 h-3.5 text-[#A67C52]" />
-              <span>100+ Experience Studios</span>
+              <Store className="w-3.5 h-3.5 text-[#C29B38]" />
+              <span>Jaipur Flagship Studio & Workshop</span>
             </Link>
             <span className="text-[#3E3832]">|</span>
             <Link
               href="/projects"
               className="hover:text-white transition-colors"
             >
-              Commercial / Bulk Orders
+              Hotels & Commercial Projects
             </Link>
           </div>
 
@@ -95,22 +96,23 @@ export default function AnnouncementBar() {
             <button
               type="button"
               onClick={() => setIsPincodeModalOpen(true)}
-              className="inline-flex items-center gap-1.5 text-[#E8E2D8] hover:text-[#C29B38] transition-colors py-0.5 px-2 rounded bg-white/5 hover:bg-white/10"
+              className="inline-flex items-center gap-1.5 text-[#E8E2D8] hover:text-[#C29B38] transition-colors py-0.5 px-2.5 rounded bg-white/5 hover:bg-white/10"
               title="Change Delivery Location"
             >
               <MapPin className="w-3.5 h-3.5 text-[#C29B38]" />
-              <span>Deliver to: <strong className="text-white underline decoration-[#C29B38]/50 underline-offset-2">{city} {pincode}</strong></span>
+              <span>Location: <strong className="text-white underline decoration-[#C29B38]/50 underline-offset-2">{city} {pincode}</strong></span>
               <ChevronDown className="w-3 h-3 text-[#A8A29E]" />
             </button>
 
             <span className="text-[#3E3832] hidden sm:inline">|</span>
 
             <a
-              href="tel:18002093232"
-              className="hidden sm:flex items-center gap-1 text-[#B8AEA3] hover:text-white transition-colors font-medium"
+              href="tel:+919950757127"
+              className="hidden sm:flex items-center gap-1 text-[#E8DCCB] hover:text-[#C29B38] transition-colors font-medium"
+              title="Call Owner Surender Singh Rajora"
             >
               <Phone className="w-3 h-3 text-[#C29B38]" />
-              <span>1800-209-3232</span>
+              <span>+91 9950757127</span>
             </a>
           </div>
         </div>

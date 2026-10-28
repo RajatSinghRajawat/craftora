@@ -8,7 +8,7 @@ export default function WhatsAppFloatingBtn() {
   const [isOpen, setIsOpen] = useState(false);
 
   const defaultMessage = encodeURIComponent(
-    'Hello Craftora Studio! I am interested in custom furniture for my home. I would like to discuss designs, wood choices, and pricing.'
+    'Hello Surender ji / Craftora Jaipur! I would like to inquire about custom solid wood furniture and interior manufacturing.'
   );
 
   return (
@@ -32,7 +32,7 @@ export default function WhatsAppFloatingBtn() {
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-pulse" />
               <span className="text-sm font-semibold text-[#1C1917]">
-                Craftora Design Atelier
+                Craftora Jaipur Atelier
               </span>
             </div>
             <button
@@ -42,11 +42,11 @@ export default function WhatsAppFloatingBtn() {
               <X className="w-4 h-4" />
             </button>
           </div>
-          <p className="mt-2 text-sm text-[#44403C] leading-relaxed">
-            Need custom dimensions, wood advice, or a quick quotation? Connect directly with our lead furniture artisan.
+          <p className="mt-2 text-xs text-[#44403C] leading-relaxed">
+            Need custom dimensions, 20+ wood finishes, or pricing? Chat directly with owner <strong>Surender Singh Rajora</strong> (+91 9950757127).
           </p>
           <a
-            href={`https://wa.me/919876543210?text=${defaultMessage}`}
+            href={`https://wa.me/919950757127?text=${defaultMessage}`}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 w-full py-2 px-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all"

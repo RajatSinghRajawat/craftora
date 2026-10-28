@@ -67,7 +67,7 @@ const POPULAR_CATEGORIES = [
 export default function PepperfryCategoryIcons() {
   return (
     <section className="py-8 bg-white border-b border-[#F0ECE4]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         
         {/* Section Header */}
         <div className="flex items-end justify-between mb-6">

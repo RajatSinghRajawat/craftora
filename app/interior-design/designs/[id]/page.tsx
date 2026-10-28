@@ -56,7 +56,7 @@ export default async function InteriorDesignDetailPage({ params }: PageProps) {
 
   return (
     <div className="bg-[#FAFAF9] min-h-screen py-8 sm:py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-[#6B6560] mb-6">
           <Link href="/" className="hover:text-[#1C1917]">
@@ -138,11 +138,11 @@ export default async function InteriorDesignDetailPage({ params }: PageProps) {
               <Button
                 variant="secondary"
                 size="lg"
-                href="tel:18002093232"
+                href="tel:+919950757127"
                 icon={<Phone className="w-4 h-4" />}
                 iconPosition="left"
               >
-                Talk to a designer
+                Call +91 9950757127
               </Button>
             </div>
             <p className="mt-3 text-xs text-[#6B6560]">

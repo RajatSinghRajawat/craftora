@@ -12,19 +12,18 @@ interface PincodeModalProps {
 }
 
 const PINCODE_MAP: Record<string, string> = {
-  '400': 'Mumbai, Maharashtra',
-  '401': 'Thane / Navi Mumbai',
+  '303': 'Jaipur (Chomu / Tatiyawas), Rajasthan',
+  '302': 'Jaipur Central / Suburbs, Rajasthan',
+  '342': 'Jodhpur, Rajasthan',
+  '313': 'Udaipur, Rajasthan',
+  '324': 'Kota, Rajasthan',
+  '305': 'Ajmer, Rajasthan',
+  '334': 'Bikaner, Rajasthan',
   '110': 'New Delhi, Delhi NCR',
   '122': 'Gurugram, Haryana',
   '201': 'Noida, Uttar Pradesh',
+  '400': 'Mumbai, Maharashtra',
   '560': 'Bengaluru, Karnataka',
-  '500': 'Hyderabad, Telangana',
-  '411': 'Pune, Maharashtra',
-  '600': 'Chennai, Tamil Nadu',
-  '700': 'Kolkata, West Bengal',
-  '380': 'Ahmedabad, Gujarat',
-  '302': 'Jaipur, Rajasthan',
-  '682': 'Kochi, Kerala',
 };
 
 export default function PincodeModal({
@@ -33,14 +32,14 @@ export default function PincodeModal({
   currentPincode,
   onSavePincode,
 }: PincodeModalProps) {
-  const [pincode, setPincode] = useState(currentPincode || '400001');
-  const [detectedCity, setDetectedCity] = useState('Mumbai, Maharashtra');
+  const [pincode, setPincode] = useState(currentPincode || '303701');
+  const [detectedCity, setDetectedCity] = useState('Jaipur (Chomu Tatiyawas), Rajasthan');
   const [error, setError] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
-      setPincode(currentPincode || '400001');
+      setPincode(currentPincode || '303701');
       setIsSuccess(false);
       setError('');
     }
@@ -166,17 +165,18 @@ export default function PincodeModal({
                 </div>
               </div>
 
-              {/* Quick Select Popular Metros */}
+              {/* Quick Select Rajasthan & Metros */}
               <div>
-                <p className="text-xs text-[#8E857C] mb-2 font-medium">Popular Cities:</p>
+                <p className="text-xs text-[#8E857C] mb-2 font-medium">Quick Select Region:</p>
                 <div className="flex flex-wrap gap-1.5">
                   {[
-                    { name: 'Mumbai', pin: '400001' },
+                    { name: 'Jaipur (Chomu)', pin: '303701' },
+                    { name: 'Jaipur (Vaishali)', pin: '302021' },
+                    { name: 'Jaipur (Mansarovar)', pin: '302020' },
+                    { name: 'Jaipur (C-Scheme)', pin: '302004' },
+                    { name: 'Jodhpur', pin: '342001' },
+                    { name: 'Udaipur', pin: '313001' },
                     { name: 'Delhi NCR', pin: '110001' },
-                    { name: 'Bengaluru', pin: '560001' },
-                    { name: 'Hyderabad', pin: '500001' },
-                    { name: 'Pune', pin: '411001' },
-                    { name: 'Chennai', pin: '600001' },
                   ].map((city) => (
                     <button
                       key={city.pin}

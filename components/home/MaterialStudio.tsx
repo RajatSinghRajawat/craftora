@@ -16,7 +16,7 @@ export default function MaterialStudio() {
 
   return (
     <section className="py-20 sm:py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         <SectionHeader
           eyebrow="Materials"
           title="Four woods. Solid all the way through."

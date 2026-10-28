@@ -33,7 +33,7 @@ const GUARANTEES = [
 export default function CustomStudioPage() {
   return (
     <div className="bg-[#FAFAF9] min-h-screen py-10 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <Reveal distance={16} duration={0.7}>

@@ -67,7 +67,7 @@ export default async function InteriorStylePage({ params }: PageProps) {
           <Image src={style.image} alt="" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1C1917]/85 via-[#1C1917]/55 to-[#1C1917]/15" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+        <div className="relative w-full px-4 sm:px-8 lg:px-12 py-16 sm:py-24 lg:py-28">
           <Link
             href="/interior-design"
             className="inline-flex items-center gap-1.5 text-sm text-[#E7E5E4] hover:text-white mb-8"
@@ -111,7 +111,7 @@ export default async function InteriorStylePage({ params }: PageProps) {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         {/* Overview + palette */}
         <section className="py-16 sm:py-20 grid grid-cols-1 lg:grid-cols-12 gap-10">
           <Reveal className="lg:col-span-7">

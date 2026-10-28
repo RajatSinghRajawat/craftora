@@ -334,7 +334,7 @@ export default function Navbar() {
       {/* ============================================================== */}
       {/* TIER 1: MAIN SEARCH & BRAND HEADER (Pepperfry Style)           */}
       {/* ============================================================== */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div className="w-full px-4 sm:px-8 lg:px-12 py-3">
         <div className="flex items-center justify-between gap-4 sm:gap-6">
           
           {/* Mobile Hamburger Button */}
@@ -417,14 +417,14 @@ export default function Navbar() {
               <Search className="w-5 h-5" />
             </button>
 
-            {/* Find Studio Action */}
+            {/* Jaipur Flagship Studio Action */}
             <Link
-              href="/about"
+              href="/contact"
               className="hidden md:flex flex-col items-center text-[#5E5750] hover:text-[#7C4B27] transition-colors p-1.5 rounded-lg group"
-              title="Experience Studios"
+              title="Jaipur Flagship Studio & Workshop"
             >
               <Store className="w-5 h-5 mb-0.5 group-hover:scale-110 transition-transform text-[#4A2E1E]" />
-              <span className="text-[11px] font-medium leading-none">Studios</span>
+              <span className="text-[11px] font-medium leading-none">Jaipur Studio</span>
             </Link>
 
             {/* Wishlist Action */}
@@ -522,10 +522,11 @@ export default function Navbar() {
                     </div>
                     <div className="pt-2 border-t border-[#F0ECE4]">
                       <a
-                        href="tel:18002093232"
-                        className="block text-center w-full py-2 bg-[#FAF8F5] hover:bg-[#F5F0E8] text-[#7C4B27] rounded-xl text-xs font-bold transition-colors"
+                        href="tel:+919950757127"
+                        className="block text-center w-full py-2 bg-[#FAF5EE] hover:bg-[#F5EBDD] text-[#7C4B27] rounded-xl text-xs font-bold transition-colors"
+                        title="Direct call to Owner Surender Singh Rajora"
                       >
-                        Call Concierge: 1800-209-3232
+                        Owner Line: +91 9950757127
                       </a>
                     </div>
                   </motion.div>
@@ -543,7 +544,7 @@ export default function Navbar() {
         className="hidden lg:block border-t border-[#F0ECE4] bg-white relative"
         onMouseLeave={() => setActiveMegaCategory(null)}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 lg:px-12">
           <ul className="flex items-center justify-between gap-1 py-1">
             {MEGA_CATEGORIES.map((cat) => {
               const isHovered = activeMegaCategory === cat.id;
@@ -616,7 +617,7 @@ export default function Navbar() {
               transition={{ duration: 0.2, ease: EASE_LUXE }}
               className="absolute left-0 right-0 top-full pt-2 z-50 pointer-events-auto"
             >
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="w-full px-4 sm:px-8 lg:px-12">
                 <div className="bg-white rounded-2xl shadow-2xl border border-[#E8E2D8] p-6 grid grid-cols-12 gap-8">
                   {/* Subcategory Columns (9 Columns) */}
                   <div className="col-span-9 grid grid-cols-3 gap-8">
@@ -726,11 +727,11 @@ export default function Navbar() {
                   <span>Launch 3D Custom Studio</span>
                 </Link>
                 <Link
-                  href="/about"
+                  href="/contact"
                   className="flex items-center gap-2.5 p-3 rounded-xl hover:bg-[#FAF8F5] text-[#1F1B18] font-medium text-sm"
                 >
                   <Store className="w-4 h-4 text-[#7C4B27]" />
-                  <span>Find 100+ Experience Studios</span>
+                  <span>Jaipur Flagship Studio & Workshop</span>
                 </Link>
                 <Link
                   href="/contact"

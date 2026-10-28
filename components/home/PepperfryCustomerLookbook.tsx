@@ -8,10 +8,10 @@ import { Star, CheckCircle, ArrowRight, Heart, MapPin } from 'lucide-react';
 const STORIES = [
   {
     id: 1,
-    homeowner: 'Vikram & Priya Mehta',
-    city: 'Bandra West, Mumbai',
+    homeowner: 'Vikram & Priya Rathore',
+    city: 'Civil Lines, Jaipur',
     quote:
-      '“The Solace curved chair transformed our penthouse living room into a sanctuary. The bouclé fabric and solid walnut curve feel like pure bespoke poetry.”',
+      '“The Solace curved chair transformed our living room into a royal sanctuary. The seasoned wood curve and bespoke upholstery crafted at the Jaipur workshop feel like pure poetry.”',
     rating: 5,
     roomImage: '/images/hero-living.jpg',
     productFeatured: 'The Solace Curved Armchair',
@@ -20,10 +20,10 @@ const STORIES = [
   },
   {
     id: 2,
-    homeowner: 'Dr. Ananya Ray',
-    city: 'Indiranagar, Bengaluru',
+    homeowner: 'Dr. Ananya Sharma',
+    city: 'C-Scheme, Jaipur',
     quote:
-      '“We ordered the 8-seater live-edge teak table. The 3-inch thickness and natural butterfly joints are a conversation starter at every dinner party.”',
+      '“We ordered the 8-seater live-edge teak dining table directly from Surender ji. The 3-inch slab thickness and natural butterfly joints are a conversation starter at every dinner.”',
     rating: 5,
     roomImage: '/images/category-dining.jpg',
     productFeatured: 'The Aethel Live-Edge Dining Slab',
@@ -32,10 +32,10 @@ const STORIES = [
   },
   {
     id: 3,
-    homeowner: 'Rohit Singhania',
-    city: 'Golf Course Road, Gurugram',
+    homeowner: 'Rajesh & Meenakshi Shekhawat',
+    city: 'Vaishali Nagar, Jaipur',
     quote:
-      '“The acoustic slat TV backdrop and floating console concealed every wire seamlessly. The warm indirect LED illumination is simply magical.”',
+      '“The acoustic slat TV backdrop and floating console concealed every wire seamlessly. The Craftora carpentry team did flawless fitting in our villa within hours.”',
     rating: 5,
     roomImage: '/images/category-tv-unit.jpg',
     productFeatured: 'The Lumina Acoustic Console',
@@ -47,20 +47,20 @@ const STORIES = [
 export default function PepperfryCustomerLookbook() {
   return (
     <section className="py-14 bg-[#FAF8F5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
           <div>
             <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#7C4B27] mb-1">
               <Star className="w-3.5 h-3.5 fill-[#C29B38] text-[#C29B38]" />
-              <span>Real Homes · Real Customers</span>
+              <span>Real Homes · 2,000+ Happy Customers</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#1F1B18]">
-              Pepperfry &amp; Craftora Customer Stories
+              Craftora Atelier Living Spaces
             </h2>
             <p className="text-xs sm:text-sm text-[#8E857C] mt-1">
-              See how over 2,400+ homes across India style their handcrafted solid wood furniture.
+              Handcrafted in solid wood at our Jaipur atelier for bespoke residences, villas and heritage hotels.
             </p>
           </div>
 

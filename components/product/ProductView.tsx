@@ -112,7 +112,7 @@ export default function ProductView({ product }: ProductViewProps) {
 
   return (
     <div className="bg-[#FAFAF9] min-h-screen py-10 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         {/* Breadcrumbs */}
         <motion.nav
           initial={{ opacity: 0, y: -10 }}

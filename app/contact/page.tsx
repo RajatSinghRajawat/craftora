@@ -26,48 +26,36 @@ const formStagger: Variants = {
 
 const ATELIERS = [
   {
-    city: 'New Delhi (Flagship Atelier)',
-    address: 'Plot 42, Sultanpur Design District, MG Road',
-    phone: '+91 98765 43210',
-    email: 'delhi@craftora.in',
-    hours: 'Tue - Sun: 10:30 AM - 7:30 PM (Mondays by appointment)',
-  },
-  {
-    city: 'Mumbai Studio',
-    address: 'Laxmi Industrial Estate, Off Link Road, Andheri West',
-    phone: '+91 98765 43211',
-    email: 'mumbai@craftora.in',
-    hours: 'Mon - Sat: 11:00 AM - 8:00 PM',
-  },
-  {
-    city: 'Bengaluru Experience Centre',
-    address: '100ft Road, HAL 2nd Stage, Indiranagar',
-    phone: '+91 98765 43212',
-    email: 'bengaluru@craftora.in',
-    hours: 'Mon - Sun: 10:30 AM - 7:30 PM',
+    city: 'Jaipur Flagship Atelier & Manufacturing Workshop',
+    owner: 'Surender Singh Rajora',
+    address: 'Jaipur Raj, Chomu Tatiyawas Toll Plaza, Jaipur, Rajasthan 303701',
+    phone: '+91 9950757127',
+    email: 'thecraftora@gmail.com',
+    hours: 'Mon - Sun: 9:30 AM - 8:30 PM (Direct factory tour & live craft consultation)',
+    highlights: '35+ Years Experience · 2,000+ Happy Customers · 50+ Buildings & 5 Hotels Furnished',
   },
 ];
 
 const FAQS = [
   {
-    q: 'How long does custom furniture take to build?',
-    a: 'Each piece is made to order from kiln-dried solid timber. Standard armchairs and coffee tables take 3 to 4 weeks. Complex bespoke dining tables, walk-in wardrobes, and acoustic TV wall consoles take 4 to 6 weeks. We share weekly photo progress updates from the atelier.'
+    q: 'How long does custom furniture take to build at the Jaipur workshop?',
+    a: 'Each piece is made to order from seasoned solid timber. Standard armchairs and coffee tables take 2 to 3 weeks. Complex bespoke dining tables, walk-in wardrobes, and acoustic TV wall consoles take 3 to 5 weeks. We share direct photo & video progress updates from our Jaipur workshop.'
   },
   {
     q: 'Can you build custom furniture to my exact dimensions?',
-    a: 'Yes, absolutely. That is the core founding principle of Craftora. We customize length, width, depth, and height down to the millimeter without charging excessive custom modification fees.'
+    a: 'Yes, absolutely. Under our founder Surender Singh Rajora, we customize length, width, depth, and height down to the millimeter without charging arbitrary custom modification fees.'
   },
   {
-    q: 'Do you offer in-home measurements?',
-    a: 'Yes. For complete room suites, wardrobes, and TV units, our architectural measurement specialist visits your home with digital laser instruments to verify wall plumb, floor leveling, and electrical conduit locations.'
+    q: 'Do you offer in-home measurements in Jaipur and Rajasthan?',
+    a: 'Yes. For complete room suites, wardrobes, and TV units, our team visits your site with digital laser instruments to verify wall plumb, floor leveling, and electrical conduits.'
   },
   {
     q: 'What is covered under the 15-Year Solid Wood Guarantee?',
-    a: 'Our guarantee covers all structural frame joinery, timber stability against warping or natural fissures, and internal webbing/spring suspensions. We also provide one complimentary annual natural beeswax re-buffing service.'
+    a: 'Our guarantee covers all structural frame joinery, timber stability against warping or natural fissures, and internal webbing/spring suspensions. Handcrafted with traditional mortise & tenon joinery.'
   },
   {
-    q: 'How does shipping and installation work?',
-    a: 'We provide complimentary White-Glove delivery across all major Indian cities. Our certified craftsmen carry the furniture inside, assemble it in your designated room, and remove all protective packaging.'
+    q: 'How does shipping and installation work from Jaipur?',
+    a: 'We provide direct White-Glove delivery and professional carpenter assembly across Jaipur, Rajasthan, and nationwide across India with specialized protective transit packing.'
   }
 ];
 
@@ -76,7 +64,7 @@ export default function ContactPage() {
     name: '',
     phone: '',
     email: '',
-    city: 'Delhi NCR',
+    city: 'Jaipur',
     consultationType: 'In-Studio Experience',
     roomInterest: 'Living Room',
     timberPreference: 'Burma Teak',
@@ -93,20 +81,20 @@ export default function ContactPage() {
 
   return (
     <div className="bg-[#FAFAF9] min-h-screen py-10 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <Reveal distance={16} duration={0.7}>
             <Badge variant="gold" size="sm" className="mb-3">
-              Atelier Consultation &amp; Studios
+              Jaipur Flagship Studio &amp; Workshop
             </Badge>
           </Reveal>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl text-[#1C1917] font-semibold tracking-tight">
-            <TextReveal text="Begin Your Bespoke Journey" onMount delay={0.15} />
+            <TextReveal text="Crafted For The Way You Live" onMount delay={0.15} />
           </h1>
           <Reveal delay={0.6} distance={24}>
             <p className="mt-4 text-base sm:text-lg text-[#44403C] font-normal leading-relaxed">
-              Visit our design ateliers in Delhi, Mumbai, or Bengaluru. Or schedule a complimentary in-home laser measurement with our lead furniture architect.
+              Visit our flagship atelier &amp; workshop at Chomu Tatiyawas Toll Plaza, Jaipur. Speak straight with founder Surender Singh Rajora for individual, bulk, or hotel orders.
             </p>
           </Reveal>
         </div>
@@ -221,10 +209,11 @@ export default function ContactPage() {
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                       className="w-full p-3 rounded-xl bg-[#FAFAF9] border border-[#E7E5E4] text-xs text-[#1C1917] focus:outline-none focus:border-[#A0741A]"
                     >
+                      <option value="Jaipur (Chomu / Tatiyawas)">Jaipur (Chomu / Tatiyawas Flagship Workshop)</option>
+                      <option value="Jaipur Suburbs">Jaipur (Vaishali / Mansarovar / C-Scheme / Civil Lines)</option>
+                      <option value="Rajasthan Region">Rajasthan (Jodhpur / Udaipur / Kota / Ajmer / Bikaner)</option>
                       <option value="Delhi NCR">Delhi NCR / Gurugram / Noida</option>
-                      <option value="Mumbai">Mumbai / Thane / Navi Mumbai</option>
-                      <option value="Bengaluru">Bengaluru</option>
-                      <option value="Other">Other City (Pan-India Shipping)</option>
+                      <option value="Other">Other City (Pan-India White-Glove Dispatch)</option>
                     </select>
                   </div>
                 </motion.div>
@@ -304,16 +293,16 @@ export default function ContactPage() {
                   <MessageSquare className="w-6 h-6 fill-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#1C1917]">
-                    WhatsApp Master Artisan Hotline
+                  <h3 className="text-base font-bold text-[#1C1917]">
+                    WhatsApp Surender Singh Rajora
                   </h3>
                   <p className="text-xs text-[#44403C] font-normal">
-                    Send floor plan drawings or photos for instant estimate.
+                    Send floor plan drawings or photos to +91 9950757127.
                   </p>
                 </div>
               </div>
               <a
-                href="https://wa.me/919876543210?text=Hello%20Craftora,%20I%20would%20like%20to%20discuss%20custom%20furniture."
+                href="https://wa.me/919950757127?text=Hello%20Surender%20ji,%20I%20would%20like%20to%20discuss%20custom%20Craftora%20furniture."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2.5 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-semibold uppercase tracking-wider transition-all whitespace-nowrap shadow-sm"
@@ -326,7 +315,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               <StaggerItem>
                 <span className="text-xs uppercase tracking-wider text-[#A0741A] font-semibold block">
-                  Visit Our Design Ateliers
+                  Exclusive Flagship Studio &amp; Factory
                 </span>
               </StaggerItem>
 
@@ -334,24 +323,38 @@ export default function ContactPage() {
                 <StaggerItem
                   key={i}
                   variant="slideLeft"
-                  className="p-6 rounded-3xl bg-white border border-[#E7E5E4] shadow-sm hover:shadow-lg hover:border-[#A0741A]/40 transition-[box-shadow,border-color] duration-500 space-y-2.5"
+                  className="p-6 rounded-3xl bg-white border border-[#E7E5E4] shadow-sm hover:shadow-lg hover:border-[#A0741A]/40 transition-[box-shadow,border-color] duration-500 space-y-3"
                 >
-                  <h4 className="text-lg font-semibold text-[#1C1917]">
-                    {atelier.city}
-                  </h4>
+                  <div>
+                    <h4 className="text-lg font-bold text-[#1C1917]">
+                      {atelier.city}
+                    </h4>
+                    <p className="text-xs text-[#C29B38] font-bold mt-0.5">
+                      Owner: {atelier.owner}
+                    </p>
+                  </div>
                   <div className="flex items-start gap-2.5 text-xs text-[#57534E]">
                     <MapPin className="w-4 h-4 text-[#A0741A] flex-shrink-0 mt-0.5" />
-                    <span>{atelier.address}</span>
+                    <span className="leading-relaxed">{atelier.address}</span>
                   </div>
                   <div className="flex items-center gap-2.5 text-xs text-[#57534E]">
                     <Phone className="w-4 h-4 text-[#A0741A] flex-shrink-0" />
-                    <a href={`tel:${atelier.phone}`} className="hover:text-[#7C4B27]">
+                    <a href={`tel:${atelier.phone}`} className="font-bold text-[#4A2E1E] hover:underline">
                       {atelier.phone}
                     </a>
                   </div>
-                  <div className="flex items-center gap-2.5 text-xs text-[#6B6560] pt-1 border-t border-[#F0EFED]">
+                  <div className="flex items-center gap-2.5 text-xs text-[#57534E]">
+                    <Mail className="w-4 h-4 text-[#A0741A] flex-shrink-0" />
+                    <a href={`mailto:${atelier.email}`} className="hover:underline">
+                      {atelier.email}
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2.5 text-xs text-[#6B6560] pt-2 border-t border-[#F0EFED]">
                     <Clock className="w-3.5 h-3.5 text-[#A0741A] flex-shrink-0" />
                     <span>{atelier.hours}</span>
+                  </div>
+                  <div className="pt-2 border-t border-[#F0EFED] text-xs font-semibold text-[#7C4B27]">
+                    ★ {atelier.highlights}
                   </div>
                 </StaggerItem>
               ))}

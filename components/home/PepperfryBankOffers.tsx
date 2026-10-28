@@ -55,7 +55,7 @@ export default function PepperfryBankOffers() {
 
   return (
     <section className="py-6 bg-[#FAF8F5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         
         {/* Section title */}
         <div className="flex items-center gap-2 mb-4">

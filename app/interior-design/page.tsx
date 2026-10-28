@@ -25,7 +25,7 @@ export default function InteriorDesignPage() {
           <Image src="/images/interior/living-modern-jaali.jpg" alt="" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1C1917]/85 via-[#1C1917]/60 to-[#1C1917]/20" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
+        <div className="relative w-full px-4 sm:px-8 lg:px-12 py-20 sm:py-28 lg:py-32">
           <div className="max-w-2xl">
             <Reveal distance={16} duration={0.7}>
               <Badge variant="ivory" size="sm" className="mb-4">
@@ -65,7 +65,7 @@ export default function InteriorDesignPage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         {/* Styles */}
         <section className="py-16 sm:py-24">
           <SectionHeader
@@ -224,12 +224,12 @@ export default function InteriorDesignPage() {
             <Button
               variant="secondary"
               size="md"
-              href="tel:18002093232"
+              href="tel:+919950757127"
               icon={<Phone className="w-4 h-4" />}
               iconPosition="left"
               className="whitespace-nowrap"
             >
-              Call Us
+              Call +91 9950757127
             </Button>
           </div>
         </Reveal>

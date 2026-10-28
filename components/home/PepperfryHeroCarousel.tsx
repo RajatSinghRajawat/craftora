@@ -66,23 +66,23 @@ const SLIDES = [
 const TRUST_PILLARS = [
   {
     icon: ShieldCheck,
-    title: '15-Year Solid Wood Warranty',
-    subtitle: 'Kiln-dried seasoned hardwood frame guarantee',
+    title: '35+ Years Heritage Craft',
+    subtitle: 'Kiln-dried Burma Teak & Walnut with 15-Yr Warranty',
   },
   {
     icon: Truck,
-    title: 'Free Delivery & Room Assembly',
-    subtitle: 'Expert white-glove installation across India',
+    title: 'Jaipur Workshop Direct',
+    subtitle: 'White-glove delivery & installation across India',
   },
   {
     icon: Award,
-    title: '100% Certified Timber',
-    subtitle: 'Zero toxic glue, zero particle board',
+    title: '2,000+ Happy Customers',
+    subtitle: 'Furnished 50+ buildings & 5 luxury hotels',
   },
   {
     icon: Ruler,
-    title: 'Free In-Home Measurement',
-    subtitle: 'Dedicated 3D architect visits your site',
+    title: 'Made to Measure & 20+ Finishes',
+    subtitle: 'Bespoke custom dimensions & 20+ wood tones',
   },
 ];
 
@@ -104,14 +104,14 @@ export default function PepperfryHeroCarousel() {
   return (
     <div className="w-full bg-[#FAF8F5]">
       {/* ============================================================== */}
-      {/* HERO BANNER CAROUSEL CONTAINER                                 */}
+      {/* HERO BANNER CAROUSEL CONTAINER (FULL WIDTH EDGE TO EDGE)       */}
       {/* ============================================================== */}
       <div
-        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6"
+        className="relative w-full px-0 sm:px-2 lg:px-3 pt-0 sm:pt-2 pb-4 sm:pb-6"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        <div className="relative h-[440px] sm:h-[480px] lg:h-[520px] rounded-3xl overflow-hidden shadow-xl border border-[#E8E2D8] bg-[#1F1B18]">
+        <div className="relative h-[480px] sm:h-[540px] lg:h-[600px] w-full overflow-hidden shadow-xl sm:rounded-2xl border-y sm:border border-[#E8E2D8] bg-[#1F1B18]">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentSlide}
@@ -127,12 +127,12 @@ export default function PepperfryHeroCarousel() {
                 alt={SLIDES[currentSlide].title}
                 fill
                 priority
-                className="object-cover object-center opacity-75"
+                className="object-cover object-center opacity-80"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30 sm:to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
 
               {/* Slide Content */}
-              <div className="relative h-full flex flex-col justify-center px-6 sm:px-12 lg:px-16 max-w-2xl text-white z-10">
+              <div className="relative h-full flex flex-col justify-center px-6 sm:px-12 lg:px-20 max-w-3xl text-white z-10">
                 
                 {/* Accent Ribbon Badge */}
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF8F5]/15 backdrop-blur-md border border-white/20 text-xs font-bold text-[#E8DCCB] mb-3 self-start">
@@ -140,11 +140,11 @@ export default function PepperfryHeroCarousel() {
                   <span>{SLIDES[currentSlide].tag}</span>
                 </div>
 
-                <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1] text-white">
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-white">
                   {SLIDES[currentSlide].title}
                 </h1>
 
-                <p className="mt-3.5 text-sm sm:text-base text-[#D7CEBE] leading-relaxed max-w-xl font-normal">
+                <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#D7CEBE] leading-relaxed max-w-2xl font-normal">
                   {SLIDES[currentSlide].description}
                 </p>
 
@@ -158,7 +158,7 @@ export default function PepperfryHeroCarousel() {
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <Link
                     href={SLIDES[currentSlide].primaryBtn.href}
-                    className="px-6 py-3 rounded-xl bg-[#C29B38] hover:bg-[#D4AF37] text-[#1F1B18] font-bold text-sm transition-all shadow-md flex items-center gap-2"
+                    className="px-7 py-3.5 rounded-xl bg-[#C29B38] hover:bg-[#D4AF37] text-[#1F1B18] font-bold text-sm transition-all shadow-md flex items-center gap-2"
                   >
                     <span>{SLIDES[currentSlide].primaryBtn.text}</span>
                     <ArrowRight className="w-4 h-4" />
@@ -166,7 +166,7 @@ export default function PepperfryHeroCarousel() {
 
                   <Link
                     href={SLIDES[currentSlide].secondaryBtn.href}
-                    className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold text-sm transition-all"
+                    className="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold text-sm transition-all"
                   >
                     {SLIDES[currentSlide].secondaryBtn.text}
                   </Link>
@@ -212,9 +212,9 @@ export default function PepperfryHeroCarousel() {
       </div>
 
       {/* ============================================================== */}
-      {/* PEPPERFRY-STYLE 4 TRUST PILLARS BAR                            */}
+      {/* PEPPERFRY-STYLE 4 TRUST PILLARS BAR (FULL WIDTH)               */}
       {/* ============================================================== */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+      <div className="w-full px-4 sm:px-8 lg:px-12 pb-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 bg-white p-4 sm:p-5 rounded-2xl border border-[#E8E2D8] shadow-xs">
           {TRUST_PILLARS.map((pillar, idx) => {
             const Icon = pillar.icon;

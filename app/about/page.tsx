@@ -18,54 +18,55 @@ import Button from '@/components/common/Button';
 import { Reveal, Stagger, StaggerItem, TextReveal, ParallaxImage } from '@/components/motion';
 
 export const metadata: Metadata = {
-  title: 'Our Craft & Heritage | Spaces. People. Stories. Crafted | Craftora',
+  title: 'Our 35-Year Heritage & Atelier | Craftora Jaipur',
   description:
-    'Discover the Craftora woodworking atelier. Sustainable kiln-dried solid teak and walnut timbers, traditional mortise-and-tenon joinery, and generations of artisan passion.',
+    'Founded by Surender Singh Rajora in Jaipur. 35+ years of solid wood excellence, 2,000+ happy customers, 50+ furnished buildings and 5 luxury hotel projects.',
 };
 
 const PILLARS = [
   {
     icon: <TreePine className="w-6 h-6 text-[#A0741A]" />,
-    title: '100% Solid Timber Only',
-    text: 'Zero particleboard. Zero toxic MDF. Zero paper foils. Every leg, rail, plinth, and drawer box is milled from genuine kiln-dried teak, walnut, oak, or sheesham.',
-    footer: 'FSC Certified Sustainable',
+    title: '35+ Years of Wood Experience',
+    text: 'Three and a half decades of master wood crafting in Jaipur. From single statement pieces to complete hotel suites, made under one brand with zero compromises.',
+    footer: 'Founded by Surender Singh Rajora',
   },
   {
     icon: <Flame className="w-6 h-6 text-[#A0741A]" />,
-    title: '45-Day Solar Kiln Seasoning',
-    text: 'Raw wood contains moisture that causes cheaper furniture to warp, creak, and crack. We kiln-dry our timbers down to 8-10% equilibrium moisture content before any cut is made.',
-    footer: 'Climatically Stabilized',
+    title: 'Seasoned Kiln-Dried Timber',
+    text: 'Raw wood contains moisture that causes cheaper furniture to warp, creak, and crack. We kiln-dry our timbers down to optimal equilibrium moisture content before any cut is made.',
+    footer: '15-Year Structural Warranty',
   },
   {
     icon: <Award className="w-6 h-6 text-[#A0741A]" />,
-    title: 'Interlocking Joinery Heritage',
-    text: 'Our master artisans employ through-tenons, sliding dovetails, and butterfly spline keys that allow the timber to breathe naturally across decades without structural fatigue.',
-    footer: '15-Year Structural Guarantee',
+    title: '20+ Finishes & Made to Measure',
+    text: 'Every piece can be customized in dimension, wood tone (20+ finishes from clear coat to smoked oak & ebony), and upholstery shaped around your room routines.',
+    footer: 'Direct Workshop Pricing',
   },
 ];
 
 const STANDARDS = [
+  '35+ Years Experience & 2,000+ Happy Clients',
   '100% Solid Kiln-Dried Hardwood (Teak, Walnut, Oak)',
-  'Organic beeswax & food-safe botanical oils',
-  'Custom dimensions built to your room footprint',
-  '15-Year Structural Warranty with free annual polish care',
+  '20+ Hand-Rubbed Wood Finishes & Custom Sizing',
+  'Exclusive Flagship Studio: Chomu Tatiyawas Toll Plaza, Jaipur',
+  'Completed furniture work for 5 hotels & 50+ buildings',
 ];
 
 export default function AboutPage() {
   return (
     <div className="bg-[#FAFAF9] min-h-screen py-10 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         {/* Editorial Hero */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <Reveal distance={16} duration={0.7}>
             <Badge variant="gold" size="sm" className="mb-3">
-              Atelier Heritage &amp; Philosophy
+              Craftora Jaipur Atelier · Since 1990
             </Badge>
           </Reveal>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl text-[#1C1917] font-semibold tracking-tight">
-            <TextReveal text="Spaces. People. Stories." onMount delay={0.15} />{' '}
+            <TextReveal text="Furniture for the" onMount delay={0.15} />{' '}
             <TextReveal
-              text="Crafted with Soul."
+              text="Way You Live."
               onMount
               delay={0.45}
               className="block text-[#7C4B27]"
@@ -73,8 +74,8 @@ export default function AboutPage() {
           </h1>
           <Reveal delay={0.7} distance={24}>
             <p className="mt-6 text-base sm:text-lg text-[#44403C] font-normal leading-relaxed">
-              Craftora was founded with a singular conviction: that a home should never be filled with disposable,
-              flat-pack furniture made of compressed sawdust. We build heirloom solid timber pieces designed to live alongside families for generations.
+              Three and a half decades of making furniture in Jaipur with one clear way of working. 
+              Founded by <strong>Surender Singh Rajora</strong>, Craftora brings complete furniture manufacturing and interior design solutions together under one roof.
             </p>
           </Reveal>
         </div>

@@ -11,7 +11,7 @@ import { Stagger, StaggerItem } from '../motion';
 export default function InteriorDesignPreview() {
   return (
     <section className="py-16 sm:py-24 bg-[#FAFAF9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         <SectionHeader
           eyebrow="Interior Design"
           title="Complete interiors, in every style"

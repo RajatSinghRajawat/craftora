@@ -34,7 +34,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#FAF8F5] text-[#44403C] border-t border-[#E8E2D8] pt-12 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         
         {/* ============================================================== */}
         {/* PEPPERFRY-STYLE NEWSLETTER & PROMO CALLOUT BANNER             */}
@@ -42,13 +42,13 @@ export default function Footer() {
         <div className="bg-[#1F1B18] text-white rounded-3xl p-6 sm:p-8 mb-12 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6 border border-[#3A322C]">
           <div className="max-w-xl text-center lg:text-left">
             <span className="inline-block px-3 py-1 rounded-full bg-[#C29B38]/20 border border-[#C29B38]/40 text-[#E8DCCB] text-xs font-bold uppercase tracking-wider mb-2">
-              🎉 Exclusive Artisan Voucher
+              🎉 Jaipur Workshop Direct Voucher
             </span>
             <h3 className="text-xl sm:text-2xl font-bold tracking-tight">
-              Get ₹2,500 Off Your First Solid Wood Order
+              Get ₹2,500 Off Your First Custom Solid Wood Order
             </h3>
             <p className="text-xs sm:text-sm text-[#B8AEA3] mt-1.5">
-              Subscribe for private previews, limited seasonal timber drops, and interior styling masterclasses.
+              Subscribe for custom timber updates, live-edge slab drops, and direct factory consultation from Surender Singh Rajora.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
 
         {/* ============================================================== */}
-        {/* BRAND & VALUE PILLARS BAR                                     */}
+        {/* BRAND & VALUE PILLARS BAR (From CRAFTORA PDF)                 */}
         {/* ============================================================== */}
         <div className="pb-10 border-b border-[#E8E2D8] grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
           <div className="flex items-center gap-3">
@@ -91,8 +91,8 @@ export default function Footer() {
               <ShieldCheck className="w-5 h-5 text-[#4A2E1E]" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-[#1F1B18]">15-Year Frame Warranty</h4>
-              <p className="text-[11px] text-[#8E857C]">Kiln-dried seasoned hardwood</p>
+              <h4 className="text-xs font-bold text-[#1F1B18]">35+ Years of Heritage</h4>
+              <p className="text-[11px] text-[#8E857C]">35 years of master wood craft</p>
             </div>
           </div>
 
@@ -101,8 +101,8 @@ export default function Footer() {
               <Truck className="w-5 h-5 text-[#7C4B27]" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-[#1F1B18]">Free White Glove Delivery</h4>
-              <p className="text-[11px] text-[#8E857C]">In-room assembly by technicians</p>
+              <h4 className="text-xs font-bold text-[#1F1B18]">2,000+ Happy Customers</h4>
+              <p className="text-[11px] text-[#8E857C]">50+ buildings &amp; 5 hotels furnished</p>
             </div>
           </div>
 
@@ -111,8 +111,8 @@ export default function Footer() {
               <TreePine className="w-5 h-5 text-emerald-700" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-[#1F1B18]">100% Certified Timber</h4>
-              <p className="text-[11px] text-[#8E857C]">Sustainable Burma Teak &amp; Walnut</p>
+              <h4 className="text-xs font-bold text-[#1F1B18]">20+ Hand-Applied Finishes</h4>
+              <p className="text-[11px] text-[#8E857C]">Dark, warm &amp; light wood tones</p>
             </div>
           </div>
 
@@ -121,14 +121,14 @@ export default function Footer() {
               <Store className="w-5 h-5 text-[#C29B38]" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-[#1F1B18]">100+ Experience Studios</h4>
-              <p className="text-[11px] text-[#8E857C]">Touch &amp; feel timber pan-India</p>
+              <h4 className="text-xs font-bold text-[#1F1B18]">Jaipur Flagship Studio</h4>
+              <p className="text-[11px] text-[#8E857C]">Chomu Tatiyawas Toll Plaza</p>
             </div>
           </div>
         </div>
 
         {/* ============================================================== */}
-        {/* COMPREHENSIVE DIRECTORY SITEMAP (Pepperfry Style)             */}
+        {/* COMPREHENSIVE DIRECTORY SITEMAP                               */}
         {/* ============================================================== */}
         <div className="py-12 grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-[#E8E2D8]">
           
@@ -160,7 +160,7 @@ export default function Footer() {
               <li><Link href="/collections?category=bedroom" className="hover:text-[#1F1B18]">Cantilevered Nightstands</Link></li>
               <li><Link href="/collections?category=wardrobes" className="hover:text-[#1F1B18]">Walk-in Dressing Suites</Link></li>
               <li><Link href="/collections?category=wardrobes" className="hover:text-[#1F1B18]">Smoked Glass Sliding Doors</Link></li>
-              <li><Link href="/collections?category=wardrobes" className="hover:text-[#1F1B18]">Cushioned Shoe Racks</Link></li>
+              <li><Link href="/collections?category=wardrobes" className="hover:text-[#1F1B18]">Custom Sized Almirahs</Link></li>
             </ul>
           </div>
 
@@ -176,49 +176,63 @@ export default function Footer() {
               <li><Link href="/collections?category=dining" className="hover:text-[#1F1B18]">Fluted Bar Cabinets</Link></li>
               <li><Link href="/collections?category=office-furniture" className="hover:text-[#1F1B18]">Executive Walnut Desks</Link></li>
               <li><Link href="/collections?category=office-furniture" className="hover:text-[#1F1B18]">Bentwood Swivel Chairs</Link></li>
-              <li><Link href="/collections?category=office-furniture" className="hover:text-[#1F1B18]">Architectural Bookcases</Link></li>
+              <li><Link href="/collections?category=office-furniture" className="hover:text-[#1F1B18]">Conference &amp; Reception Desks</Link></li>
             </ul>
           </div>
 
           {/* Col 4: Timber & Services */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-[#7C4B27]">
-              Timber Guide &amp; 3D
+              Atelier &amp; Craft
             </h4>
             <ul className="space-y-1.5 text-xs text-[#5E5750]">
-              <li><Link href="/about" className="hover:text-[#1F1B18]">Burma Natural Teak</Link></li>
-              <li><Link href="/about" className="hover:text-[#1F1B18]">American Dark Walnut</Link></li>
-              <li><Link href="/about" className="hover:text-[#1F1B18]">Indian Rosewood (Sheesham)</Link></li>
-              <li><Link href="/about" className="hover:text-[#1F1B18]">European White Oak</Link></li>
+              <li><Link href="/about" className="hover:text-[#1F1B18]">35-Year Heritage Story</Link></li>
+              <li><Link href="/about" className="hover:text-[#1F1B18]">20+ Wood Finishes</Link></li>
               <li><Link href="/custom-studio" className="hover:text-[#1F1B18] font-bold text-[#4A2E1E]">3D Custom Studio</Link></li>
-              <li><Link href="/interior-design" className="hover:text-[#1F1B18] font-bold text-[#4A2E1E]">Interior Design</Link></li>
-              <li><Link href="/contact" className="hover:text-[#1F1B18]">Free Site Measurement</Link></li>
-              <li><Link href="/projects" className="hover:text-[#1F1B18]">Interior Architects Program</Link></li>
+              <li><Link href="/interior-design" className="hover:text-[#1F1B18] font-bold text-[#4A2E1E]">Interior Design Solutions</Link></li>
+              <li><Link href="/contact" className="hover:text-[#1F1B18]">Visit Jaipur Studio</Link></li>
+              <li><Link href="/projects" className="hover:text-[#1F1B18]">5 Hotel Projects Portfolio</Link></li>
+              <li><Link href="/projects" className="hover:text-[#1F1B18]">50+ Furnished Buildings</Link></li>
             </ul>
           </div>
 
-          {/* Col 5: Studios & Customer Care */}
+          {/* Col 5: Jaipur Flagship Studio & Owner Contact (From PDF) */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-[#7C4B27]">
-              Studios &amp; Help
+              Jaipur Flagship Atelier
             </h4>
-            <ul className="space-y-1.5 text-xs text-[#5E5750]">
-              <li><span className="text-[#1F1B18] font-bold">Mumbai:</span> Bandra West, Juhu</li>
-              <li><span className="text-[#1F1B18] font-bold">Delhi NCR:</span> Golf Course Rd, Gurugram</li>
-              <li><span className="text-[#1F1B18] font-bold">Bengaluru:</span> 100ft Rd, Indiranagar</li>
-              <li><span className="text-[#1F1B18] font-bold">Pune:</span> Koregaon Park</li>
-              <li><span className="text-[#1F1B18] font-bold">Hyderabad:</span> Jubilee Hills</li>
-              <li className="pt-2">
-                <a href="tel:18002093232" className="text-[#4A2E1E] font-bold hover:underline">
-                  Toll Free: 1800-209-3232
+            <div className="space-y-2 text-xs text-[#5E5750]">
+              <div>
+                <p className="text-[#1F1B18] font-bold">Owner:</p>
+                <p className="font-semibold text-[#4A2E1E]">Surender Singh Rajora</p>
+              </div>
+              <div>
+                <p className="text-[#1F1B18] font-bold">Studio &amp; Workshop:</p>
+                <p className="leading-relaxed">
+                  Jaipur Raj, Chomu Tatiyawas Toll Plaza, Jaipur, Rajasthan 303701
+                </p>
+              </div>
+              <div className="pt-1 space-y-1">
+                <a
+                  href="tel:+919950757127"
+                  className="flex items-center gap-1.5 text-[#4A2E1E] font-bold hover:underline"
+                >
+                  <Phone className="w-3.5 h-3.5 text-[#C29B38]" />
+                  <span>+91 9950757127</span>
                 </a>
-              </li>
-              <li>
-                <a href="mailto:concierge@craftora.in" className="text-[#5E5750] hover:text-[#1F1B18]">
-                  concierge@craftora.in
+                <a
+                  href="mailto:thecraftora@gmail.com"
+                  className="flex items-center gap-1.5 text-[#5E5750] hover:text-[#1F1B18]"
+                >
+                  <Mail className="w-3.5 h-3.5 text-[#C29B38]" />
+                  <span>thecraftora@gmail.com</span>
                 </a>
-              </li>
-            </ul>
+              </div>
+              <div className="pt-2 text-[11px] text-[#8E857C] border-t border-[#F0ECE4]">
+                <p className="font-medium text-[#1F1B18]">✓ Exclusive Flagship Studio (Jaipur)</p>
+                <p>Direct manufacturer shipping across Rajasthan &amp; Pan-India.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -230,7 +244,7 @@ export default function Footer() {
             <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#E8E2D8] bg-white shrink-0">
               <Image src="/images/craftora-logo.png" alt="Craftora" fill className="object-cover" />
             </div>
-            <p>© {new Date().getFullYear()} CRAFTORA™ India Atelier. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} CRAFTORA™ · Surender Singh Rajora. Jaipur, Rajasthan 303701.</p>
           </div>
 
           {/* Payment & Security Badges */}
